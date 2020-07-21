@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="Text/Css" href="Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">        
+        <a class="JavaScript" >
+          <img src="./Images/rsz_download.jpg"  width="80" height="70" class="d-inline-block align-top"  alt="JavaScript"> JavaScript Assingment
+        </a>
+      </nav>
+    </div>
+
+    <!-- Chapter 39-44  -->
+<nav class="navbar2 navbar-light">
+    <span class="navbar-brand2 mb-0 h1">Chapter 39-44</span>
+  </nav>
+  <nav class="navbar3 navbar-light">
+    <span class="navbar-brand3 mb-0 h1">FUNCTIONS, switch statements, while… do-while loops</span>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 1: Write a custom function power ( a, b ), to calculate the value of
+            a raised to b.</h3>
+          <h3> Answer: <button onclick="q1()"> Check</button></h3>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 2:Any year is entered through the keyboard. Write a function to
+            determine whether the year is a leap year or not.</h3>
+           <h2>Input Year: <input type="text" id = "year"></h2>
+          <h3> Answer: <button onclick="check_leapyear()"> Check</button></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 3: If the lengths of the sides of a triangle are denoted by a, b, and
+            c, then area of triangle is given by<br>
+            area = S(S − a)(S − b)(S − c)<br>
+            where, S = ( a + b + c ) / 2<br>
+            Calculate area of triangle using 2 functions</h3>
+          <h3> Answer: <button onclick="area()"> Check</button></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 4: Write a function that receives marks received by a student in 3
+            subjects and returns the average and percentage of these
+            marks. there should be 3 functions one is the mainFunction
+            and other are for average and percentage. Call those functions
+            from mainFunction and display result in mainFunction</h3>
+          <h3> Answer: <button onclick="Marks()"> Check</button></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 5: You have learned the function indexOf. Code your own custom
+            function that will perform the same functionality. You can code
+            for single character as of now.</h3>
+          <h3> Answer: <button onclick="indexOf()"> Check</button></h3>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 6: Write a function to delete all vowels from a sentence. Assume
+            that the sentence is not more than 25 characters long.</h3>
+          <h3> Answer: <button onclick="str()"> Check</button></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 7: Write a function with switch statement to count the number of
+            occurrences of any two vowels in succession in a line of text.</h3>
+          <h3> Answer: <button onclick=" vowel()"> Check</button></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 8: The distance between two cities (in km.) is input through the
+            keyboard. Write four functions to convert and print this
+            distance in meters, feet, inches and centimeters.</h3>
+            <doument class="write"><p>
+              <label>Kilometers</label>
+              <input id="inputKilometers" type="number" placeholder="Kilometers" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+            </p>
+            <p>Feet: <span id="outputFeet"></span></p>
+            <p>
+              <label>Kilometers</label>
+              <input id="inputKilometers" type="number" placeholder="Kilometers" oninput="LengthConverterm(this.value)" onchange="LengthConverterm(this.value)">
+            </p>
+            <p>Meters: <span id="outputMeters"></span></p>
+            <p>
+              <label>Kilometers</label>
+              <input id="inputKilometers" type="number" placeholder="Kilometers" oninput="LengthConverterin(this.value)" onchange="LengthConverterin(this.value)">
+            </p>
+            <p>Inches: <span id="outputInches"></span></p>
+            <p>
+              <label>Kilometers</label>
+              <input id="inputKilometers" type="number" placeholder="Kilometers" oninput="LengthConvertercm(this.value)" onchange="LengthConvertercm(this.value)">
+            </p>
+            <p>cm: <span id="outputcm"></span></p>
+            </doument>
+            <h3> Answer: <button onclick="LengthConverterm(valNum)">Check</button></h3>
+          <h3> Answer: <button onclick="LengthConverter(valNum)">Check</button></h3>
+          <h3> Answer: <button onclick="LengthConverterin(valNum)">Check</button></h3>
+          <h3> Answer: <button onclick="LengthConvertercm(valNum)">Check</button></h3>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 10: A cashier has currency notes of denominations 10, 50 and
+            100. If the amount to be withdrawn is input through the
+            keyboard in hundreds, find the total number of currency notes
+            of each denomination the cashier will have to give to the
+            withdrawer.</h3>
+          <h3> Answer: <button onclick="currencyDenomination()"> Check</button></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 9: . Write a program to calculate overtime pay of employees.
+            Overtime is paid at the rate of Rs. 12.00 per hour for every hour
+            worked above 40 hours. Assume that employees do not work
+            for fractional part of an hour.</h3>
+          <h3> Answer: <button onclick="question9()" > Check</button></h3>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Chapter 43-48  -->
+<nav class="navbar2 navbar-light">
+<span class="navbar-brand2 mb-0 h1">Chapter 43-48</span>
+</nav>
+<nav class="navbar3 navbar-light">
+<span class="navbar-brand3 mb-0 h1">Events</span>
+</nav>
+
+  
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 4: Display an image in browser. Change the picture on mouseover and set the
+            first picture on mouseout.</h3>
+            <img onmouseover = "changePic1()" onmouseout= "changePic22()" id="myImg" src="" width="550" height="400">
+          <h3> Answer: <button> Check</button></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 5: Show a counter in browser. Counter should increase on click on increase
+            button and decrease on click on decrease button. And show updated counter
+            value in browser. </h3><br>
+          <h3> Answer: <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value" style="width: 20%; height: 20%;">-</div>
+            <input type="number" id="number" value="0"  style="width: 20%;">
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"  style="width: 20%; height: 20%;">+</div>
+          </form></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 3: Display 10 student records in table and each row should contain a delete
+            button. If you click on a button to delete a record, entire row should be
+            deleted.</h3>
+            <table id="myTable" style="width: 100%;; text-align: center;">
+              <tr>
+                <th>Index</th>
+                <th>Name</th> 
+                <th>Class</th>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>eva</td>
+                <td>4th</td>
+                <td><button style="width: 100%;" value="Delete" onclick="deleteRow(this)" type="button">delete</button></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Jackson</td>
+                <td>4th</td>
+                <td><button style="width: 100%;" value="Delete" onclick="deleteRow(this)"  type="button">delete</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>asam</td>
+                <td>4th</td>
+                <td><button style="width: 100%;" value="Delete" onclick="deleteRow(this)" type="button">delete</button></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Jasim</td>
+                <td>4th</td>
+                <td><button style="width: 100%;" value="Delete" onclick="deleteRow(this)" type="button">delete</button></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Jasim</td>
+                <td>4th</td>
+                <td><button style="width: 100%;" value="Delete" onclick="deleteRow(this)" type="button">delete</button></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Jasim</td>
+                <td>4th</td>
+                <td><button style="width: 100%;" value="Delete" onclick="deleteRow(this)" type="button">delete</button></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Jasim</td>
+                <td>4th</td>
+                <td><button style="width: 100%;" value="Delete" onclick="deleteRow(this)" type="button">delete</button></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Jasim</td>
+                <td>4th</td>
+                <td><button style="width: 100%;" value="Delete" onclick="deleteRow(this)" type="button">delete</button></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Jasim</td>
+                <td>4th</td>
+                <td><button style="width: 100%;" value="Delete" onclick="deleteRow(this)" type="button">delete</button></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Jasim</td>
+                <td>4th</td>
+                <td><button style="width: 100%;" value="Delete" onclick="deleteRow(this)" type="button">delete</button></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Jasim</td>
+                <td>4th</td>
+                <td><button style="width: 100%;" value="Delete" onclick="deleteRow(this)" type="button">delete</button></td>
+              </tr>
+            </table>
+      </div>
+    </div>
+  </div>
+   
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 1: Show an alert box on click on a link.</h3>
+          <h3> Answer: <button<p><a href="https://Facebook.com" onClick="popup('Welcome to Facebook');">https://Facebook.com</a></p></button></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 2: Display some Mobile images in browser. On click on an
+            image Show the message in alert to user.</h3>
+          <h3> Answer: <button> <div class="newArrivals">
+            <div class="container">
+             <div class="row justify-content-md-center">
+              <div class="col">
+                <div class="card">
+                  <img src="images/mobile 1.jpg" class="card-img-top" alt="Mobile" onclick="popup('Thanks for purchasing mobile form us')">
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/mobile 2.jpg" class="card-img-top" alt="Mobile2" onclick="popup('Thanks for purchasing mobile form us')">
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/mobile 3.jpg" class="card-img-top" alt="Mobile3" onclick="popup('Thanks for purchasing mobile form us')">
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+          </div>
+         </div>
+        </div></button></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chapter 49-52  -->
+<nav class="navbar2 navbar-light">
+  <span class="navbar-brand2 mb-0 h1">Chapter 49-52</span>
+  </nav>
+  <nav class="navbar3 navbar-light">
+  <span class="navbar-brand3 mb-0 h1">Events</span>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 1: Create a signup form and display form data in your web
+            page on submission.</h3>
+          <h3> Answer:
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Insert User Data</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="username" class="col-form-label">User Name:</label>
+                <input type="text" class="form-control" id="username">
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="Password" class="col-form-label">Password:</label>
+                <input type="text" class="form-control" id="Password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 2: Suppose in your webpage there is content area in which
+            you have entered your item details, but user can only see
+            some details on first look. When user clicks on “Read
+            more” button, full detail of that particular item will be
+            displayed.</h3>
+          <h3> Answer:<h2>Read More Read Less Button</h2>
+            <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note10-aura-glow.jpg" style="width: 200px; height: 300px;">
+            <p><h1>Introducing next-level power</h1>With Galaxy Note10 and Note10+ we've designed a mobile experience that’s like a computer, a gaming console, a movie-tech camera, and an intelligent pen, all in one device.
+             <h1>More screen, less interruption</h1><span id="dots">...</span><span id="more"><h1>Now comes in two sizes: powerful and powerful</h1>
+              For the first time ever, you can choose the Note size that fits you best.<h1>Cinematic Infinity-O Display</h1>>With a tiny, front-facing camera lens, the display is a Dynamic AMOLED that's brilliant in all conditions.
+            <h1>Right-now fast</h1>Our powerful 7nm processor and 12GB RAM combine to harness incredible speeds. With 2.0Gbps LTE, easily download files, live game, and stream content, in even the busiest of places.
+
+            LTE
+            2.0Gbps
+            PROCESSOR
+            7nm
+            RAM2
+            12GB
+            ON Galaxy Note10+
+            RAM2
+            8GB
+            ON Galaxy Note10
+            </span></p>
+            <button onclick="myFunction()" id="myBtn">Read more</button></h3>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 3: In previous assignment you have created a tabular data
+          using javascript. Let’s modify that. Create a form which
+          takes student’s details and show each student detail in
+          table. Each row of table must contain a delete button and
+          an edit button. On click on delete button entire row should
+          be deleted. On click on edit button, a hidden form will
+          appear with the values of that row.</h3>
+          
+        <h3> Answer: 
+         
+          <div id="container" style="width:700px;">
+          </div>
+      </h3>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Chapter 52-57  -->
+<nav class="navbar2 navbar-light">
+  <span class="navbar-brand2 mb-0 h1">Chapter 52-57</span>
+</nav>
+<nav class="navbar3 navbar-light">
+  <span class="navbar-brand3 mb-0 h1">Modal</span>
+</nav>
+
+
+ <div class="container">
+  <div class="row">
+    <div class="col">
+        <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 1: Add modal.html style and html codes in your file
+          Create an array of all images paths.
+          Loop through array and display all images in browser using innerHTML.
+          Add onclick function on each image.
+          On image Function definition get modal using id and assign it to a variable,
+          And on that variable
+          Add class 'modal-open'
+          Remove class 'modal-close'
+          Add style to display block
+          Assign image path to src
+          On Modal Close Function definition "onClosedImagModal()" get modal using id and assign it to a variable,
+          And on that variable
+          Add class 'modal-close'
+          Remove class 'modal-open'
+          Set this line in end of function
+          setTimeout(()=>{ modal.style.display = "none"; }, 550).</h3>
+        <h3> Answer:
+          <h2 style="text-align:center">Modelbox</h2>
+
+          <div class="row">
+            <div class="column">
+              <img src="images/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="images/5.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="images/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="images/4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+          </div>
+          
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/1.jpg" style="width: 100%;;height: 40%;"">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/5.jpg" style="width: 100%;;height: 40%;"">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/3.jpg" style="width: 100%;;height: 40%;"">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/4.png" style="width: 100%;;height: 40%;"">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+          
+              <div class="column">
+                <img class="demo cursor" src="images/1.jpg" style="width: 100%;;height: 40%;"" onclick="currentSlide(1)" alt="Nature and sunrise">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/5.jpg" style="width: 100%;;height: 40%;"" onclick="currentSlide(2)" alt="Snow">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/3.jpg" style="width: 100%;;height: 40%;"" onclick="currentSlide(3)" alt="Mountains and fjords">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/4.png" style="width: 100%;;height: 40%;"" onclick="currentSlide(4)" alt="Northern Lights">
+              </div>
+            </div>
+          </div>
+          </h3>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Chapter 58-67  -->
+<nav class="navbar2 navbar-light">
+  <span class="navbar-brand2 mb-0 h1">Chapter 58-67</span>
+</nav>
+<nav class="navbar3 navbar-light">
+  <span class="navbar-brand3 mb-0 h1">DOM</span>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 2:use HTML code of question 1 and show the result on browser</h3>
+        <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion : i. What is node type of element having id “form-content”.<br>
+          ii. Show node type of element having id “lastName” and its child node.<br>
+          iii. Update child node of element having id “lastName”.<br>
+          iv. Get First and last child of id “main-content”.<br>
+          v. Get next and previous siblings of id “lastName”.<br>
+          vi. Get parent node and node type of element having id “email”</h3>
+        <h3> Answer: <div>
+          <h1> DOM </h1>
+<div id="form-content" class="content">
+<label for="first-name">First Name</label>
+<input type="text" id="first-name">
+<label for="last-name">Last Name</label>
+<input type="text" id="last-name">
+<label for="email">Email</label>
+<input type="text" id="email">
+</div>
+<div id="main-content" class="content"><p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p>
+<p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p>
+</div>
+</div>
+<button onclick="myFunction()">Try it</button>
+           </h3>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion 2:use HTML code of question 1 and show the result on browser</h3>
+        <h3  style="background-color: black; font-family: sans-serif; color: #ffff;">Quetion : 
+          i. Get element of id “main-content” and assign them in a variable.<br>
+          ii. Display all child elements of “main-content” element.<br>
+          iii. Get all elements of class “render” and show their innerHTML
+          in browser.<br>
+          iv. Fill input value whose element id first-name using javascript.<br>
+          v. Repeat part iv for id ”last-name” and “email”.
+         ”</h3>
+        <h3> Answer: <div>
+          <h1> DOM </h1>
+<div id="form-content" class="content">
+<label for="first-name">First Name</label>
+<input type="text" id="first-name" value="Nageen"/>
+<label for="last-name">Last Name</label>
+<input type="text" id="last-name" value="Shaikh"/>
+<label for="email">Email</label>
+<input type="text" id="email" value="www.example.com"/>
+</div>
+<div id="main-content" class="content"><p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p>
+<p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p>
+</div>
+</div>
+<button onclick="myFunction()">Try it</button>
+           </h3>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+<script src="app.js"></script>
+</html>
